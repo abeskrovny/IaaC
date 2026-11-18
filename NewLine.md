@@ -575,57 +575,7 @@ admin@srvOoBService01:/opt/netbox-docker$ cat /etc/apt/keyrings/docker.asc
 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
-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
+...
 M8ssD1jFheOJf3hODnkKU+HKjvMROl1DK7zdmLdNzA1cvtZH/nCC9KPj1z8QC47S
 xx+dTZSx4ONAhwbS/LN3PoKtn8LPjY9NP9uDWI+TWYquS2U+KHDrBDlsgozDbs/O
 jCxcpDzNmXpWQHEtHU7649OXHP7UeNST1mCUCH5qdank0V1iejF6/CfTFU4MfcrG
@@ -696,8 +646,6 @@ echo "deb [signed-by=/etc/apt/keyrings/gitlab-runner.gpg] https://packages.gitla
 sudo apt update
 sudo apt install -y gitlab-runner
 
-
-
 -=-=-=-
 
 
@@ -706,15 +654,77 @@ sudo apt install -y gitlab-runner
 
 В современных версиях GitLab старый способ регистрации через общий токен устарел. Теперь раннер создается прямо в интерфейсе:
 1. Зайдите в вашу группу или проект в GitLab.
-2. Перейдите в Settings -> CI/CD -> Runners и нажмите New group runner (или New project runner).
-3. Укажите тег, например netgitops (по нему пайплайны будут понимать, что задачу нужно отдать именно этому серверу).
+2. Перейдите в Settings -> CI/CD -> Runners (в правом меню "Настройки" -> CI/CD -> "Средства выполнения") и нажмите New group runner (или New project runner).
+3. Укажите тег, например `netgitops` (по нему пайплайны будут понимать, что задачу нужно отдать именно этому серверу).
 4. Нажмите Create runner и скопируйте выданную команду регистрации с токеном вида glrt-....
 
+На стадии 3 после нажатия на кнопку создания runner'а, GitLab производит редирект по DNS-имени, которое для нас остается неразрешенным.
+
+Проблема возникает из-за того, что в конфигурации самого GitLab указан внутренний адрес `http://gitlab.local`. Когда GitLab генерирует ссылки для редиректов (в том числе при регистрации раннера), он берет базовый URL из параметра `external_url`.
+
+Я попробовал несколько вариантов с переконфигурацией, но так как мой GitLab работает в виртуальной среде EVE-NG и публикуется через DNAT, мне проще было на стороне "внешней" системы поправить адрес на `http://10.1.10.88:8080/ai-cluster-group/dc/-/runners/3/register`.
+
+В настройках оставляем чекбокс на Linux (Операционная система раннера) на п. 4:
+```bash
+sudo gitlab-runner register  --url http://localhost:8080  --token glrt-eWJuhAleCWGicQ2aCCF5MG86MQpwOjIKdDozCnU6MQ8.01.170mqfbsj
+```
+
+так как в docker-compose.yml у нас определен порт:
+```
+    ports:
+      - '8080:80'
+```
+
+На интерактивные вопросы в консоли ответьте так:
+• Enter the GitLab instance URL: просто нажмите Enter (подхватится из флага)???
+• Enter a name for the runner: введите имя, например oob-ubuntu-runner???
+• Enter an executor: напишите docker.
+• Enter the default Docker image: укажите базовый образ, например python:3.11-slim.
+
+```bash
+admin@srvOoBService01:/opt/netbox-docker$ sudo gitlab-runner register  --url http://localhost:8080  --token glrt-eWJuhAleCWGicQ2aCCF5MG86MQpwOjIKdDozCnU6MQ8.01.170mqfbsj
+Runtime platform                                    arch=amd64 os=linux pid=651784 revision=33227fd4 version=19.5.3
+Running in system-mode.                            
+                                                   
+Enter the GitLab instance URL (for example, https://gitlab.com/):
+[http://localhost:8080]: <ENTER>
+Verifying runner... is valid                        correlation_id=01M7QMKDWEJTXDC209DK6KJFQP runner=eWJuhAleC runner_name=srvOoBService01
+Enter a name for the runner. This is stored only in the local config.toml file:
+[srvOoBService01]: <ENTER>
+Enter an executor: shell, custom, instance, docker, docker-windows, docker-autoscaler, docker+machine, kubernetes, ssh, parallels, virtualbox: docker <ENTER>
+Enter the default Docker image (for example, ruby:3.3): python:3.11-slim <ENTER>
+Runner registered successfully. Feel free to start it, but if it's running already the config should be automatically reloaded!
+ 
+Configuration (with the authentication token) was saved in "/etc/gitlab-runner/config.toml"
+```
+
+После этого проверьте статус службы командой `sudo gitlab-runner status`. В веб-интерфейсе GitLab напротив вашего раннера должен загореться зеленый кружок Online.
+```bash
+admin@srvOoBService01:/opt/netbox-docker$ sudo gitlab-runner status
+Runtime platform                                    arch=amd64 os=linux pid=665543 revision=33227fd4 version=19.5.3
+gitlab-runner: Service is running
+```
+
+А в WEB-консоли нажимаем кнопку "Просмотр средств выполнения":
+
+![Работающие раннеры](Images/SetupGitLABRunner01.png)
+
+Когда раннер загорится зеленым, переходите к настройке безопасности и структуры проекта:
+1. Пробросьте секреты. В проекте GitLab зайдите в Settings -> CI/CD -> Variables и добавьте переменные NETBOX_URL, NETBOX_TOKEN, а также логины и пароли для подключения к коммутаторам (обязательно ставьте галочку Mask variable).
+2. Добавьте файл .gitlab-ci.yml в корень репозитория. Создайте в нем первый тестовый этап (например, запуск yamllint или ansible-lint), чтобы убедиться, что при коммите раннер успешно забирает код и запускает контейнер.
+3. Настройте Dynamic Inventory. Подключите плагин netbox.netbox.nb_inventory в конфигурации Ansible, чтобы плейбуки автоматически брали список хостов, роли и IP-адреса из NetBox.
+
+
+НАДО БУДЕТ ВЕРНУТЬСЯ!!!
+
+Даже если регистрация по IP пройдет успешно, при запуске сборок раннер попытается скачать исходный код проекта (git clone) по адресу, который ему отдаст GitLab. Если в настройках GitLab все еще прописан gitlab.local, то во время выполнения задачи вы получите точно такую же ошибку резолвинга DNS (lookup gitlab.local).
+Чтобы избежать этого, выберите один из двух вариантов:
+• Исправить external_url в самом GitLab (как описано в предыдущем шаге). Это самый надежный путь, так как сервер начнет отдавать правильные ссылки для клонирования репозиториев всем раннерам.
+• Прописать домен в /etc/hosts на машине с раннером. Если менять конфиг GitLab нельзя, добавьте соответствие IP-адреса на сервере srvOoBService01 (это сработает, только если на хосте с GitLab проброшен стандартный 80-й порт, так как /etc/hosts не умеет перенаправлять порты вроде :8080).
 
 
 
-
-
+===========
 
 2. Как обновлять GitLab (в Docker)
 
@@ -730,6 +740,106 @@ docker compose up -d
 6. Дождитесь завершения миграций (можно следить за логами: docker compose logs -f gitlab).
 7. Повторяйте шаги 4–6, пока не дойдете до целевой актуальной версии.
 Подробную инструкцию по контейнерам смотрите в официальной документации GitLab Docker Upgrades.
+
+---
+
+Организация -> Владение - это логическое разделение на теннанты внутри нетбокс
+- Группа собственников (ЮСК)
+- Собственник (Технический отдел)
+
+Право собственности - связка с группами в нетбоксе к группам пользователей - кто управляет
+- Группа владельцев: OwnerGroup(USK Admins)
+- Владелец: Owner (ProdWinAdmins)
+
+---
+
+## OpenBAO
+
+[OpenBao](https://openbao.org/docs/) является открытым форком HashiCorp Vault (под лицензией MPL 2.0), он полностью совместим с его API, клиентами и коллекциями Ansible (`community.hashi_vault`), но при этом не имеет лицензионных ограничений.
+
+OpenBao (открытый форк HashiCorp Vault) спроектирован как универсальное зашифрованное хранилище секретов, а не только как инструмент для CI/CD. Для хранения статических учетных данных используется встроенный механизм KV (Key-Value) Secrets Engine.
+
+
+Как это работает в OpenBao
+
+• Движок KV (Key-Value). Это основной инструмент для хранения паролей от внешних сервисов. Внутри него вы создаете произвольную структуру папок (путей), например secret/external-accounts/aws или secret/services/mail, и записываете туда пары «ключ-значение» (логин, пароль, токен, URL).
+• Версионирование (KV v2). Вторая версия движка автоматически сохраняет историю изменений. Если вы случайно перезаписали пароль от внешнего аккаунта, можно легко посмотреть старое значение или откатиться к предыдущей версии.
+• Гибкое разграничение прав (Policies). С помощью политик доступа вы можете разрешить конкретному человеку или сервису читать пароли только из определенной ветки (например, только из secret/marketing/*), закрыв доступ ко всем остальным.
+• Полный аудит. OpenBao записывает в лог каждое обращение к секрету: кто, когда и с какого IP-адреса запрашивал конкретный пароль.
+
+Сценарии использования для внешних аккаунтов
+
+1. Для приложений и скриптов. Скрипты автоматизации, бэкапы или CI/CD-пайплайны (в том числе ваш GitLab Runner) могут забирать пароли от внешних API и сервисов напрямую из OpenBao по API перед запуском задачи, не храня их в коде.
+2. Для команды (как корпоративный менеджер паролей). Сотрудники могут заходить в веб-интерфейс (UI) OpenBao под своими учетными записями (например, через LDAP, OIDC или по токенам) и безопасно брать нужные логины и пароли от общих внешних аккаунтов.
+
+Ограничения, которые стоит учитывать
+
+• Нет автозаполнения в браузере. В отличие от классических менеджеров паролей (Bitwarden, KeePass, 1Password), у OpenBao нет браузерных расширений для автоматической подстановки логинов на сайтах. Пароли придется копировать из веб-интерфейса или забирать через CLI/API.
+• Нет автоматической ротации для внешних сайтов. Для внутренних баз данных (PostgreSQL, MySQL) OpenBao умеет сам менять пароли по расписанию. Для сторонних веб-сервисов пароли придется обновлять в хранилище вручную после их смены на самом сайте.
+
+
+
+
+
+
+
+Создайте директории для конфигурации и данных:
+```
+cd /opt && sudo mkdir -p /opt/openbao-docker/{config,data}
+```
+
+Создайте файл конфигурации `/opt/openbao-docker/config/config.hcl`:
+```hcl
+ui = true
+disable_mlock = true
+
+storage "raft" {
+  path    = "/openbao-docker/data"
+  node_id = "node1"
+}
+
+listener "tcp" {
+  address     = "0.0.0.0:8200"
+  tls_disable = 1 # Для стенда; в продакшене рекомендуется подключить TLS-сертификаты
+}
+
+api_addr = "http://127.0.0.1:8200"
+cluster_addr = "https://127.0.0.1:8201"
+```
+
+Создайте `/opt/openbao-docker/docker-compose.yml`:
+```yaml
+services:
+  openbao:
+    image: openbao/openbao:latest
+    container_name: openbao
+    restart: unless-stopped
+    ports:
+      - "8200:8200"
+    volumes:
+      - ./config:/openbao/config:ro
+      - ./data:/openbao/data
+    cap_add:
+      - IPC_LOCK
+    command: server -config=/openbao-docker/config/config.hcl
+```
+
+Запустите контейнер и выполните первичную инициализацию:
+```bash
+cd /opt/openbao-docker && sudo docker compose up -d
+docker exec -e BAO_ADDR='http://127.0.0.1:8200' openbao bao operator init
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Введение
@@ -759,3 +869,31 @@ swOoBCCore01(config-if-Et1)#mvr
 
 GVRP (GARP VLAN Registration Protocol) — это устаревший открытый сетевой протокол стандарта IEEE 802.1Q, предназначенный для динамической регистрации и распространения информации о VLAN между коммутаторами через транковые порты. Он является прямым предшественником современного протокола MVRP, который обсуждался ранее.
 
+===
+
+3750
+
+
+1. Диалог первоначальной настройки (Setup Mode / System Configuration Dialog)
+
+Если конфигурация коммутатора пустая (файл startup-config отсутствует в памяти NVRAM), при включении коммутатор автоматически запускает интерактивный скрипт.
+• Как работает: Система пошагово задает вопросы в консоли (имя хоста, пароли, IP-адрес для управления, параметры SNMP).
+• Как вызвать вручную: Если конфигурация уже есть, мастер можно запустить командой setup в привилегированном режиме (enable).
+
+2. Автоматическая загрузка конфигурации по сети (AutoInstall)
+
+Это полноценный сервис для массового развертывания «из коробки» без подключения консольного кабеля.
+• Как работает: При включении пустой коммутатор рассылает DHCP-запросы на всех активных портах. Получив IP-адрес и опции DHCP (адрес TFTP-сервера и имя файла конфигурации), он автоматически скачивает файл настроек по TFTP и применяет его.
+• Требования: В сети должны быть заранее настроены DHCP-сервер (с опциями 66 / 150 и 67) и TFTP-сервер с подготовленными конфигами.
+
+3. Режим Express Setup (через кнопку Mode)
+
+На передней панели Catalyst 3750 есть физическая кнопка Mode, которая позволяет перевести коммутатор в режим быстрой настройки через веб-интерфейс.
+• Как работает: Если на пустом коммутаторе зажать кнопку Mode на 3 секунды (пока не загорятся индикаторы), порт 1 перейдет в режим DHCP-сервера и выдаст вашему ПК временный адрес. После этого можно открыть в браузере адрес 10.0.0.1 и задать базовые параметры через графическое меню.
+
+4. Загрузка по сети из загрузчика (ROMMON / Xmodem / TFTP)
+
+Если на коммутаторе повреждена или удалена сама операционная система (образ IOS во flash-памяти), он загрузится в базовый режим загрузчика (приглашение switch:).
+• Как работает: В этом режиме нет полноценного сетевого стека, но можно залить новый образ прошивки через консольный порт по протоколу Xmodem или настроить базовые переменные окружения (IP_ADDR, DEFAULT_ROUTER) для загрузки образа с TFTP-сервера (поддерживается не на всех ревизиях загрузчика 3750, чаще используется Xmodem).
+
+===
