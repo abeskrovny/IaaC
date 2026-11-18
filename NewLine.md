@@ -781,8 +781,6 @@ OpenBao (открытый форк HashiCorp Vault) спроектирован �
 
 
 
-
-
 Создайте директории для конфигурации и данных:
 ```
 cd /opt && sudo mkdir -p /opt/openbao-docker/{config,data}
