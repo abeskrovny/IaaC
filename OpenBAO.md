@@ -70,5 +70,92 @@ services:
 Запустите контейнер и выполните первичную инициализацию:
 ```bash
 cd /opt/openbao-docker && sudo docker compose up -d
-docker exec -e BAO_ADDR='http://127.0.0.1:8200' openbao bao operator init
 ```
+
+Процесс `OpenBao` внутри контейнера запускается от имени системного пользователя `openbao` (обычно имеет `UID 100` и `GID 1000`), но примонтированная директория на хосте принадлежит пользователю `root`. Необходимо поправить права доступа, чтобы контейнер корректно запустился:
+```bash
+sudo chown -R 100:1000 /opt/openbao/
+```
+
+Далее необходимо произвести первичную инициализацию, используя команду `docker exec -e BAO_ADDR='http://127.0.0.1:8200' openbao bao operator init`. Команда выдаст 5 ключей распечатывания (Unseal Keys) и 1 Root Token. Обязательно сохраните их в надежном месте:
+```bash
+admin@srvOoBService01:/opt/openbao$ sudo docker exec -e BAO_ADDR='http://127.0.0.1:8200' openbao bao operator init
+Unseal Key 1: MawDj/6mhwc/xgSdhi+/xzz6Yo6JAyw9bLBPlsmcJJKk
+Unseal Key 2: bWXvaVneC6cNrxzKElbaZlGLiBNRf080BBd2CJvejYSN
+Unseal Key 3: /RnJZOLyJvyiLKyn1bM8J9yzKk9PcHeK39NM7SaHeHlH
+Unseal Key 4: ZrXkCf+udNIfr3xCzm0+0uF+LApWU8cBIoJrLVf19bNB
+Unseal Key 5: EXtflYnZRj4BJN45a8Ow7P4QAcUNJ+oQYbop03+By/Lq
+
+Initial Root Token: s.I41MOy4VdBL1LluI12UkNnzR
+
+Vault initialized with 5 key shares and a key threshold of 3. Please securely
+distribute the key shares printed above. When the Vault is re-sealed,
+restarted, or stopped, you must supply at least 3 of these keys to unseal it
+before it can start servicing requests.
+
+Vault does not store the generated root key. Without at least 3 keys to
+reconstruct the root key, Vault will remain permanently sealed!
+
+It is possible to generate new unseal keys, provided you have a quorum
+of existing unseal keys shares. See "bao operator rotate-keys" for more
+information.
+```
+
+> В реальной инфраструктуре публиковать ключи шифрования и токены в открытом доступе категорически запрещено. Однако в данном случае мы работаем в изолированной тестовой среде EVE-NG, поэтому для наглядности примера я оставлю эти данные незамаскированными.
+
+После запуска OpenBao находится в запечатанном (Seal) состоянии. Необходимо распечатать (Unseal) хранилище, выполнив команду `docker exec -it -e BAO_ADDR='http://127.0.0.1:8200' openbao bao operator unseal` три раза подряд, каждый раз вводя один из пяти полученных ключей (я буду использовать первые 3):
+```bash
+admin@srvOoBService01:/opt/openbao$ sudo docker exec -it -e BAO_ADDR='http://127.0.0.1:8200' openbao bao operator unseal      
+Unseal Key (will be hidden): MawDj/6mhwc/xgSdhi+/xzz6Yo6JAyw9bLBPlsmcJJKk
+Key                Value
+---                -----
+Seal Type          shamir
+Initialized        true
+Sealed             true
+Total Shares       5
+Threshold          3
+Unseal Progress    1/3
+Unseal Nonce       498e81eb-87e1-46f0-835a-40602954a1f6
+Version            2.7.2
+Commit Date        2026-10-26T20:32:27Z
+Storage Type       raft
+HA Enabled         true
+window@srvOoBService01:/opt/openbao$ sudo docker exec -it -e BAO_ADDR='http://127.0.0.1:8200' openbao bao operator unseal
+Unseal Key (will be hidden): bWXvaVneC6cNrxzKElbaZlGLiBNRf080BBd2CJvejYSN
+Key                Value
+---                -----
+Seal Type          shamir
+Initialized        true
+Sealed             true
+Total Shares       5
+Threshold          3
+Unseal Progress    2/3
+Unseal Nonce       498e81eb-87e1-46f0-835a-40602954a1f6
+Version            2.7.2
+Commit Date        2026-10-26T20:32:27Z
+Storage Type       raft
+HA Enabled         true
+window@srvOoBService01:/opt/openbao$ sudo docker exec -it -e BAO_ADDR='http://127.0.0.1:8200' openbao bao operator unseal
+Unseal Key (will be hidden): /RnJZOLyJvyiLKyn1bM8J9yzKk9PcHeK39NM7SaHeHlH
+Key                     Value
+---                     -----
+Seal Type               shamir
+Initialized             true
+Sealed                  false
+Total Shares            5
+Threshold               3
+Version                 2.7.2
+Commit Date             2026-10-26T20:32:27Z
+Storage Type            raft
+Cluster Name            vault-cluster-0b3b220a
+Cluster ID              cdb00cd4-8ad4-f5de-0365-5b869c5ef036
+HA Enabled              true
+HA Cluster              n/a
+HA Mode                 standby
+Raft Committed Index    26
+Raft Applied Index      26
+```
+
+После этого веб-интерфейс станет доступен по адресу `http://<IP_сервера>:8200/ui`:
+
+![Стартовый экран OpenBAO](Images/OpenBAO01.png)
