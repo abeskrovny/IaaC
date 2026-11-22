@@ -228,7 +228,7 @@ sudo docker network create --subnet=172.12.11.0/24 -d bridge gitopsnet
 services:
   netbox:
     ports:
-      - "192.168.1.101:80:8080"
+      - "10.1.111.12:80:8080"
     networks:
       - default
       - gitopsnet
