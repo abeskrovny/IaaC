@@ -50,13 +50,20 @@ services:
     container_name: openbao
     restart: unless-stopped
     ports:
-      - "8200:8200"
+      - "10.1.111.13:80:8200"
+    networks:
+      - default
+      - gitopsnet
     volumes:
       - ./config:/openbao/config:ro
       - ./data:/openbao/data
     cap_add:
       - IPC_LOCK
     command: server -config=/openbao-docker/config/config.hcl
+
+networks:
+  gitopsnet:
+    external: true
 ```
 
 Запускаем контейнер:
@@ -339,34 +346,6 @@ Key-Value в OpenBao — это фундаментальный движок се
 
 
 
-!!!!
-
-
-
-
-
-
-
-
-
-
-
-
-
-----
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -452,3 +431,20 @@ totp/ — это путь монтирования для движка секр�
 
 
 !!!Интеграция со всеми компонентами
+
+
+```bash
+admin@srvOoBService01:/opt/gitlab-docker$ sudo docker exec -e BAO_ADDR='http://127.0.0.1:8200' -e BAO_TOKEN='s.I41MOy4VdBL1LluI12UkNnzR' openbao bao kv put gitops/netbox/api token="Bearer nbt_x75oyug8vQzJ.BGgKW10Xl2241kqU0YTeTohZW5IIcZWdCW7bGivE"
+     
+===== Secret Path =====
+gitops/data/netbox/api
+
+======= Metadata =======
+Key                Value
+---                -----
+created_time       2026-11-23T06:51:35.502876553Z
+custom_metadata    <nil>
+deletion_time      n/a
+destroyed          false
+version            1
+```

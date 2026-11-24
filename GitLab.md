@@ -1,13 +1,12 @@
-Установка GitLab и GitLab Runner
-
+# Установка GitLab и GitLab Runner
 Для локального контура оптимально развернуть self-hosted GitLab и отдельный Runner, который будет иметь сетевой доступ как к NetBox, так и к сетевому оборудованию.
-• Развертывание GitLab CE. Создайте директорию `/opt/gitlab`:
+
+Развертывание GitLab CE начнем с создания директории контейнера:
 ```bash
-sudo mkdir /opt/gitlab-docker
-cd /opt/gitlab-docker/
+sudo mkdir /opt/gitlab-docker && cd /opt/gitlab-docker/
 ```
 
-файл `docker-compose.yml` (потребуется минимум 4 ГБ ОЗУ):
+Создадим самостоятельно файл `docker-compose.yml` (потребуется минимум 4 ГБ ОЗУ):
 ```yaml
 services:
   gitlab:
@@ -20,15 +19,26 @@ services:
       GITLAB_OMNIBUS_CONFIG: |
         external_url 'http://gitlab.local'
     ports:
-      - '80:80'
-      - '443:443'
-      - '2222:22'
+      - '10.1.111.14:80:80'
+      - '10.1.111.14:443:443'
+      - '10.1.111.14:2222:22'
+    networks:
+      - default
+      - gitopsnet
     volumes:
       - './config:/etc/gitlab'
       - './logs:/var/log/gitlab'
       - './data:/var/opt/gitlab'
     shm_size: '256m'
+
+networks:
+  gitopsnet:
+    external: true
 ```
+
+> Следует изначально указать правильное имя хоста, чтобы при редиректе не получать ошибки связанные с недоступностью хоста.
+
+Я сразу вешаю его на IP-адрес, определенный для него в [части](https://github.com/abeskrovny/IaaC/blob/main/Prepare.md).  
 
 Запускаем контейнер командой `docker compose up -d`.
 
