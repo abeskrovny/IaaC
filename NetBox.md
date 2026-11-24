@@ -423,7 +423,7 @@ RUN /usr/local/bin/uv pip install -r /opt/netbox/plugin_requirements.txt
 EOF
 ```
 
-После этого, необходимо внести следующие изменения в файл `docker-compose.override.yml`, чтобы сервисы NetBox использовали  новый образ:
+После этого, необходимо внести следующие изменения в файл `docker-compose.override.yml`, чтобы сервисы NetBox использовали  новый образ (данное действие необходимо выполнить для первого устанавливаемого плагина):
 ```YAML
 services:
   netbox:
@@ -431,6 +431,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile-Plugins
+    dns:
+      - 10.1.111.254
+      - 8.8.8.8
     ports:
       - "10.1.111.12:80:8080"
     networks:
@@ -440,8 +443,14 @@ services:
       start_period: 300s
   netbox-worker:
     image: netbox:latest-plugins
+    dns:
+      - 10.1.111.254
+      - 8.8.8.8
   netbox-housekeeping:
     image: netbox:latest-plugins
+    dns:
+      - 10.1.111.254
+      - 8.8.8.8
 
 networks:
   gitopsnet:
@@ -449,6 +458,8 @@ networks:
 ```
 
 >  Параметр `healthcheck: start_period: 300s` добавлен из-за того, что в моем окружение NetBox не всегда успевал стартовать до проверки работоспособности, что вызывало ошибки при старте контейнера.
+
+> Все измения связаны со строками, содержащими `plugins`.
 
 А также зарегистрировать плагин в файле конфигурации плагинов и расширений `/opt/netbox-docker/configuration/plugins.py` (или добавьте блок в `./configuration.py`):
 ```python
